@@ -2,12 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Bajamuta's GitHub Page</title>
 </head>
 <body>
-<h1>Tytuł</h1>
-<p>Paragraf 1</p>
-<p>Paragraf 2</p>
-<p>Paragraf 3</p>
+<h1>Bajamuta's GitHub Page</h1>
+<section>
+    <h2>Formularz</h2>
+    <p>Zapisz się na szkolenie</p>
+    <form action="https://formspree.io/f/xyz-123" method="post">
+        <div class="form-group">
+            <label for="imie">Imię*</label>
+            <input name="imie" id="imie" type="text" required/>
+        </div>
+        <div class="form-group">
+            <label for="nazwisko">Nazwisko*</label>
+            <input name="nazwisko" id="nazwisko" type="text" required/>
+        </div>
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input name="email" id="email" type="email" required/>
+        </div>
+        <div class="form-group">
+            <label for="telefon">Telefon*</label>
+            <input name="telefon" id="telefon" type="tel" required/>
+        </div>
+        <div class="form-group">
+            <label for="miasto">Miasto*</label>
+            <select name="miasto" id="miasto">
+                <option disabled>---</option>
+                <option value="Kraków">Kraków</option>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Gdańsk">Gdańsk</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>Płeć*</legend>
+                <input type="radio" id="kobieta" name="plec" value="kobieta">
+                <label for="kobieta">Kobieta</label>
+                <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">
+                <label for="mezczyzna">Mężczyzna</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label for="wiadomosc">Wiadomość</label>
+            <textarea name="wiadomosc" id="wiadomosc" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" value="false" name="zgoda" id="zgoda" required>
+            <label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych*</label>
+        </div>
+        <button type="submit">Zarejestruj</button>
+    </form>
+</section>
+<script type="application/javascript" src="js/main.js"></script>
 </body>
 </html>
