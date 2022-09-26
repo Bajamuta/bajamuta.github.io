@@ -10,7 +10,7 @@
 <section>
     <h2>Formularz</h2>
     <p>Zapisz się na szkolenie</p>
-    <form action="https://formspree.io/f/xyz-123" method="post">
+    <form id="rejestracja" action="" onsubmit="action = get_action();">
         <div class="form-group">
             <label for="imie">Imię*</label>
             <input name="imie" id="imie" type="text" required/>
@@ -30,7 +30,6 @@
         <div class="form-group">
             <label for="miasto">Miasto*</label>
             <select name="miasto" id="miasto">
-                <option disabled>---</option>
                 <option value="Kraków">Kraków</option>
                 <option value="Warszawa">Warszawa</option>
                 <option value="Gdańsk">Gdańsk</option>
@@ -56,6 +55,6 @@
         <button type="submit">Zarejestruj</button>
     </form>
 </section>
-<script type="application/javascript" src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
