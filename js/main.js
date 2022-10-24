@@ -1,5 +1,5 @@
-function get_action() {
-    const form = document.getElementById('rejestracja');
-    alert('Dziękujemy za rejestrację ' + form.imie.value + ' ' + form.nazwisko.value);
-    return 'index.html';
-}
+$(document).ready(function () {
+   $("button").click(() => {
+       $("#dane-programisty").load("https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php");
+   })
+});
