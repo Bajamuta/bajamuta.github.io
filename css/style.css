@@ -1,0 +1,8 @@
+.rounded-circle {
+    width: 150px;
+    height: 150px;
+}
+
+.rounded-circle i {
+    line-height: 150px;
+}
