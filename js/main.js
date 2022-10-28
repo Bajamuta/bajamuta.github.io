@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("button").click(() => {
+    $("#pobierz-dane").click(() => {
         $.getJSON("https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php").then(
             (val) => {
                 const dane = $("#dane-programisty");
